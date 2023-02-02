@@ -60,8 +60,6 @@ const Calci = () => {
                 <button onClick={Calculate} name='='  id='result'>=</button >
                 <button onClick={handleClick} name='NUM'  className="buttons"  style={{backgroundColor:'orange'}} >NUM</button >
              </div>
-
-
         </div>
      );
 }
