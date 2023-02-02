@@ -15,6 +15,7 @@ const Calci = () => {
  let Calculate = ()=>{
     try{
         setResult(eval(result).toString())
+
     }
     catch(err){
         setResult('Error')
@@ -30,7 +31,7 @@ const Calci = () => {
                    
                 </div>
              <div className="info">
-                <button onClick={clear} name='AC'  id='clear'> AC</button >
+                <button onClick={clear} name='AC'  id='clear'> AC </button >
                 <button onClick={backSpace} name= 'C'  className="buttons">C</button >
                 <button onClick={handleClick} name='%'  className="buttons">%</button >
                 <button onClick={handleClick} name='/' className="buttons" style={{backgroundColor:'orange'}}>/</button >
