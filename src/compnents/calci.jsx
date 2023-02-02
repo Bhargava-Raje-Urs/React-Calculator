@@ -12,7 +12,14 @@ const Calci = () => {
   let backSpace = ()=>{
     setResult(result.slice(0,result.length-1))
   }
- 
+ let Calculate = ()=>{
+    try{
+        setResult(eval(result).toString())
+    }
+    catch(err){
+        setResult('Error')
+    }
+ }
     return ( 
         <div className="main">
                 <h1>React Calculaor</h1>
